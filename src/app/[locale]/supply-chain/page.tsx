@@ -1,3 +1,4 @@
+export const dynamicParams = false;
 import type { Metadata } from "next";
 import { constructMetadata } from "@/lib/metadata";
 import { MANUFACTURING_HUBS } from "@/lib/constants";

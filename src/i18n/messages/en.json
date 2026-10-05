@@ -1,0 +1,280 @@
+{
+  "site": {
+    "name": "100Drone",
+    "tagline": "China UAV Supply Chain Partner"
+  },
+  "nav": {
+    "services": "Services",
+    "supplyChain": "Supply Chain",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "rfq": "RFQ / INQUIRE"
+  },
+  "hero": {
+    "eyebrow": "China UAV Supply Chain Partner",
+    "headline": "Access China's\nUAV Manufacturing\nEcosystem",
+    "subtext": "Components, Connectors, Wiring Harnesses, Payload Integration, Ground Support Equipment and Engineering Support — all through a single partner.",
+    "cta_primary": "Submit RFQ",
+    "cta_secondary": "Explore Services",
+    "key_message": "One Contact. Thousands of Chinese UAV Suppliers."
+  },
+  "whyChina": {
+    "eyebrow": "Why China",
+    "headline": "The World's Most Complete\nDrone Manufacturing Ecosystem",
+    "subtext": "China produces the majority of the world's commercial drone components and possesses one of the most complete UAV manufacturing ecosystems — from electronics and connectors to airframes and payload integration."
+  },
+  "stats": {
+    "suppliers": "Qualified Suppliers",
+    "components": "Components Sourced",
+    "countries": "Countries Served",
+    "delivery": "On-Time Delivery"
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "headline": "Your Engineering\nOffice in China",
+    "subtext": "We don't just source parts — we are your supply chain team, quality team, and engineering team on the ground in China.",
+    "inquire": "Inquire",
+    "componentsSourcing": "UAV Components Sourcing",
+    "componentsSubtitle": "CONNECTORS · WIRING · RF · ANTENNAS · BATTERIES",
+    "componentsDesc": "Access thousands of qualified Chinese component manufacturers through a single point of contact. We source, qualify, and consolidate connectors, wiring harnesses, RF components, antennas, and power systems.",
+    "componentsFeatures": [
+      "High-reliability military & industrial-grade connectors",
+      "Custom wiring harness design & production",
+      "RF components: antennas, amplifiers, filters",
+      "Li-Po / Li-Ion battery pack sourcing",
+      "Component consolidation & logistics"
+    ],
+    "mechanicalParts": "Mechanical Parts & Structures",
+    "mechanicalSubtitle": "CNC · CARBON FIBER · AIRFRAME · MOLDS",
+    "mechanicalDesc": "Precision mechanical components manufactured to your specifications. From CNC-machined aluminum parts to carbon fiber airframe structures.",
+    "mechanicalFeatures": [
+      "5-axis CNC machining (aluminum, titanium, steel)",
+      "Carbon fiber layup & fabrication",
+      "Injection molding for production volumes",
+      "Airframe structural components",
+      "Rapid prototyping & small-batch production"
+    ],
+    "payloadIntegration": "Payload Integration Systems",
+    "payloadSubtitle": "EO/IR · GIMBAL · CAMERA · SENSOR",
+    "payloadDesc": "Integrate sophisticated payloads into your UAV platforms. We source gimbals, cameras, EO/IR sensors, and ensure seamless mechanical and electrical integration.",
+    "payloadFeatures": [
+      "EO/IR gimbal systems (2-axis & 3-axis)",
+      "High-resolution camera integration",
+      "Thermal imaging payloads",
+      "Custom payload mounting solutions",
+      "Flight controller compatibility verification"
+    ],
+    "groundSupport": "Ground Support Equipment",
+    "groundSubtitle": "LAUNCH · GROUND STATION · TEST · MAINTENANCE",
+    "groundDesc": "Complete ground support solutions including launch systems, ground control stations, test equipment, and maintenance tools for professional UAV operations.",
+    "groundFeatures": [
+      "Pneumatic & rail launch systems",
+      "Portable ground control stations",
+      "Field test & diagnostic equipment",
+      "Transport cases & field kits",
+      "Maintenance & repair tooling"
+    ],
+    "supplierQual": "Supplier Qualification & Management",
+    "supplierQualSubtitle": "AUDIT · INSPECT · QUALIFY · SHIP",
+    "supplierQualDesc": "Your engineering and quality team in China. We find, audit, and qualify factories, conduct inspections, and manage the entire procurement-to-shipment process.",
+    "supplierQualFeatures": [
+      "Factory identification & capability matching",
+      "On-site factory audits (ISO, AS9100, IATF)",
+      "Pre-shipment inspection & testing",
+      "Quality documentation & traceability",
+      "Export logistics & customs clearance"
+    ]
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "headline": "From Inquiry to\nDelivery in 5 Steps",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Requirements Definition",
+        "desc": "You send us your component specifications, drawings, and quality requirements."
+      },
+      {
+        "number": "02",
+        "title": "Supplier Matching",
+        "desc": "We match your requirements against 500+ qualified suppliers in our network."
+      },
+      {
+        "number": "03",
+        "title": "Audit & Qualification",
+        "desc": "On-site factory audits, sample validation, and capability verification."
+      },
+      {
+        "number": "04",
+        "title": "Production & QC",
+        "desc": "Manufacturing with in-line quality control and pre-shipment inspection."
+      },
+      {
+        "number": "05",
+        "title": "Consolidation & Shipping",
+        "desc": "Multi-supplier consolidation, export documentation, and global logistics."
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Who We Serve",
+    "headline": "Built for\nDrone Programs\nat Every Scale",
+    "subtext": "From prototype-stage startups to government-scale programs — our supply chain services scale with you.",
+    "tier1": {
+      "title": "Drone Startups & Brands",
+      "desc": "From prototype to production. We help drone startups navigate China's manufacturing ecosystem, reducing time-to-market and development costs.",
+      "examples": ["Commercial drone brands", "Consumer drone startups", "Niche application developers"]
+    },
+    "tier2": {
+      "title": "System Integrators",
+      "desc": "For companies building complete UAV solutions. We source components, manage sub-assembly supply chains, and ensure system-level compatibility.",
+      "examples": ["Defense system integrators", "Industrial UAV solution providers", "Government project contractors"]
+    },
+    "tier3": {
+      "title": "Enterprise & Government",
+      "desc": "Scaled procurement for large programs. Dedicated supply chain management, quality assurance, and long-term manufacturing partnerships.",
+      "examples": ["Police & border patrol programs", "Energy inspection fleets", "Agricultural UAV operations"]
+    },
+    "typical": "Typical Clients"
+  },
+  "oneContact": {
+    "eyebrow": "Your China Operations Team",
+    "headline": "One Contact.\nFull Supply Chain.",
+    "subtext": "We are not a sourcing agent. We are your dedicated engineering office, quality team, and supply chain management on the ground in China. One relationship replaces dozens of supplier relationships.",
+    "bullets": [
+      "One point of contact for 500+ qualified suppliers",
+      "Engineering expertise to translate your specs into production",
+      "On-site quality control at every manufacturing hub",
+      "Multi-supplier consolidation for seamless logistics"
+    ]
+  },
+  "contactHome": {
+    "eyebrow": "Let's Talk",
+    "headline": "Ready to Access\nChina's\nDrone Supply Chain?",
+    "subtext": "Send us your requirements. We'll respond within 24 hours with a preliminary supplier match and sourcing proposal.",
+    "form_title": "Quick RFQ",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@company.com",
+    "message": "What do you need?",
+    "messagePlaceholder": "Describe your component, assembly, or project requirements...",
+    "submit": "Send Inquiry",
+    "emailContact": "info@100drone.com",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "Connecting global UAV programs with China's complete manufacturing ecosystem. One contact. Thousands of suppliers.",
+    "operational": "OPERATIONAL",
+    "est": "EST.",
+    "navigate": "NAVIGATE",
+    "services": "SERVICES",
+    "contact": "CONTACT",
+    "copyright": "ALL RIGHTS RESERVED.",
+    "privacy": "PRIVACY",
+    "terms": "TERMS"
+  },
+  "hubs": {
+    "shenzhen": {
+      "name": "Shenzhen",
+      "specialty": "Electronics, PCB, Sensors, Flight Controllers",
+      "desc": "The global capital of consumer electronics and drone innovation. Home to thousands of PCB manufacturers, component distributors, and UAV R&D centers."
+    },
+    "dongguan": {
+      "name": "Dongguan",
+      "specialty": "CNC Machining, Injection Molding, Connectors",
+      "desc": "The world's most concentrated precision manufacturing zone. Specializes in high-tolerance CNC parts, molds, and industrial connectors."
+    },
+    "suzhou": {
+      "name": "Suzhou",
+      "specialty": "Carbon Fiber, Composites, Precision Parts",
+      "desc": "China's advanced materials hub. Leading in carbon fiber fabrication, composite airframe components, and precision mechanical engineering."
+    },
+    "changzhou": {
+      "name": "Changzhou",
+      "specialty": "Wiring Harnesses, Cable Assemblies, Batteries",
+      "desc": "Key manufacturing center for wiring harnesses, cable assemblies, and EV-grade battery packs applicable to UAV power systems."
+    }
+  },
+  "supplyChain": {
+    "eyebrow": "Supply Chain",
+    "headline": "China's UAV\nManufacturing Hubs",
+    "subtext": "Each city in China's drone manufacturing belt specializes in different capabilities. We know where to find the right factory for your requirements.",
+    "advantage": "The China Advantage",
+    "advantage1": {
+      "title": "Cluster Effect",
+      "desc": "Manufacturers cluster geographically, creating dense networks of specialized suppliers. A Shenzhen drone startup can prototype a complete UAV within weeks using local suppliers alone."
+    },
+    "advantage2": {
+      "title": "Scale & Speed",
+      "desc": "Chinese factories can scale from prototype to mass production faster than anywhere else in the world. Tooling lead times, production ramp-up, and cost-efficiency are unmatched."
+    },
+    "advantage3": {
+      "title": "Complete Ecosystem",
+      "desc": "From raw materials to finished assemblies — every step of the supply chain exists within a 200km radius. No other country offers this level of manufacturing integration for UAV components."
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "headline": "Connecting Global\nUAV Programs With\nChina's Manufacturing",
+    "mission": "Our Mission",
+    "missionText1": "100Drone was founded to solve a critical problem: global UAV companies need access to China's unmatched drone component manufacturing ecosystem, but managing dozens of supplier relationships across different cities, languages, and quality standards is impossible without local expertise.",
+    "missionText2": "We are your engineering office, quality team, and supply chain management on the ground in China — giving you one point of contact for thousands of qualified suppliers across Shenzhen, Dongguan, Suzhou, and Changzhou.",
+    "difference": "What Sets Us Apart",
+    "differenceItems": [
+      "500+ qualified factories in our supply network",
+      "On-the-ground team in all major manufacturing hubs",
+      "Engineering expertise to translate your specs into production",
+      "Rigorous quality control with on-site inspection",
+      "Single point of contact — no language barrier, no timezone friction",
+      "Multi-supplier consolidation for seamless logistics"
+    ],
+    "team": "Our Team",
+    "teamText": "Our team brings together professionals with experience in leading UAV, electronics, and supply chain companies. We combine deep manufacturing knowledge with international business expertise to bridge the gap between global drone programs and China's factory floor."
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "headline": "Tell Us What\nYou Need",
+    "subtext": "Whether you need a single component or a complete supply chain solution, we're ready to help.",
+    "contactInfo": "Contact Information",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "locationLabel": "Location",
+    "form_title": "Request for Quotation",
+    "company": "Company",
+    "companyPlaceholder": "Your company name",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 555 000 0000",
+    "submit": "SUBMIT RFQ"
+  },
+  "blog": {
+    "eyebrow": "Insights",
+    "headline": "UAV Supply Chain\nKnowledge Center",
+    "subtext": "Expert insights on China's drone manufacturing ecosystem, procurement strategies, and quality management.",
+    "readMore": "Read Article",
+    "published": "Published"
+  },
+  "common": {
+    "backToHome": "Return Home",
+    "notFound": "Page not found",
+    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
+    "error404": "[ERROR 404]",
+    "ctaRfq": "Submit RFQ",
+    "ctaContact": "Contact Us"
+  },
+  "seo": {
+    "homeTitle": "100Drone — China UAV Supply Chain Partner | Drone Components Sourcing",
+    "homeDesc": "Access China's complete UAV manufacturing ecosystem through a single partner. Components, engineering, sourcing, and quality control for global drone programs.",
+    "servicesTitle": "UAV Supply Chain Services — Components Sourcing, Engineering & Logistics",
+    "servicesDesc": "Comprehensive UAV components sourcing, mechanical parts, payload integration, ground support equipment, and supplier qualification services from China.",
+    "supplyChainTitle": "China UAV Supply Chain Network — Manufacturing Hubs & Capabilities",
+    "supplyChainDesc": "Explore China's UAV manufacturing hubs: Shenzhen (electronics), Dongguan (CNC), Suzhou (carbon fiber), and Changzhou (wiring & batteries).",
+    "aboutTitle": "About 100Drone — Your China UAV Supply Chain Partner",
+    "aboutDesc": "Learn how 100Drone connects global UAV programs with China's manufacturing ecosystem. 500+ qualified suppliers, on-the-ground engineering support.",
+    "contactTitle": "Contact 100Drone — Submit RFQ | UAV Supply Chain Partner",
+    "contactDesc": "Contact 100Drone for UAV component sourcing, supply chain management, and engineering support. Send your RFQ and get a response within 24 hours.",
+    "blogTitle": "UAV Supply Chain Insights — Blog | 100Drone",
+    "blogDesc": "Expert articles on China's drone manufacturing ecosystem, component sourcing strategies, quality control, and supply chain management."
+  }
+}

@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+/* ============================================
+   100Drone — China UAV Supply Chain Partner
+   Tactical-Industrial Dark Theme
+   ============================================ */
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #eaeaea;
+  --surface: #111111;
+  --surface-elevated: #1a1a1a;
+  --accent: #00d4ff;
+  --accent-dim: rgba(0, 212, 255, 0.15);
+  --accent-glow: rgba(0, 212, 255, 0.3);
+  --hazard: #e61919;
+  --hazard-dim: rgba(230, 25, 25, 0.15);
+  --terminal: #4af626;
+  --border: rgba(234, 234, 234, 0.08);
+  --border-strong: rgba(234, 234, 234, 0.15);
+  --text-muted: rgba(234, 234, 234, 0.5);
+  --text-dim: rgba(234, 234, 234, 0.35);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-hazard: var(--hazard);
+  --color-terminal: var(--terminal);
+  --color-border: var(--border);
+  --color-text-muted: var(--text-muted);
+  --font-sans: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code", Consolas, monospace;
+}
+
+/* ============================================
+   Base
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   Selection
+   ============================================ */
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ============================================
+   CRT Scanline Effect (subtle overlay)
+   ============================================ */
+
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* ============================================
+   Noise texture
+   ============================================ */
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--accent-dim), 0 0 60px var(--accent-dim);
+  }
+  50% {
+    box-shadow: 0 0 30px var(--accent-glow), 0 0 80px var(--accent-glow);
+  }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes terminal-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes border-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-terminal-blink {
+  animation: terminal-blink 1s step-end infinite;
+}
+
+/* ============================================
+   Utility classes
+   ============================================ */
+
+.glass-panel {
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+}
+
+.glass-panel-strong {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--border-strong);
+}
+
+.border-glow {
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border-glow:hover {
+  border-color: var(--accent-dim);
+  box-shadow: 0 0 20px var(--accent-dim);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px var(--accent-dim);
+}
+
+.accent-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.hazard-line {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--hazard) 0px,
+    var(--hazard) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+/* ============================================
+   Grid corner crosshairs
+   ============================================ */
+
+.crosshair::before,
+.crosshair::after {
+  content: '+';
+  position: absolute;
+  color: var(--text-dim);
+  font-family: var(--font-geist-mono);
+  font-size: 10px;
+  line-height: 1;
+}
+
+.crosshair-tl::before { top: -6px; left: -6px; }
+.crosshair-tr::after { top: -6px; right: -6px; }
+.crosshair-bl::before { bottom: -6px; left: -6px; }
+.crosshair-br::after { bottom: -6px; right: -6px; }

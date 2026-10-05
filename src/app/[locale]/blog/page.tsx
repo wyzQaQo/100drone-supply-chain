@@ -1,4 +1,3 @@
-export const dynamicParams = false;
 import type { Metadata } from "next";
 import { Link } from "@/i18n/routing";
 import { constructMetadata } from "@/lib/metadata";

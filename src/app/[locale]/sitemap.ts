@@ -1,6 +1,12 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/constants";
+import { BLOG_POSTS } from "@/data/blog";
 
+/**
+ * Blog URLs come from the same BLOG_POSTS module that the blog route uses in
+ * `generateStaticParams` (Object.keys(BLOG_POSTS)), so adding an article updates
+ * both automatically and the sitemap can never drift into 404 entries.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE.url;
 
@@ -13,15 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
   ];
 
-  const blogPosts = [
-    "china-uav-supply-chain-guide",
-    "drone-component-sourcing-strategy",
-    "quality-control-uav-manufacturing",
-    "shenzhen-drone-ecosystem",
-    "carbon-fiber-drone-parts-china",
-  ].map((slug) => ({
+  const blogPosts = Object.keys(BLOG_POSTS).map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(BLOG_POSTS[slug].date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));

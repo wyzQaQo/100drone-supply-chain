@@ -1,25 +1,16 @@
 import { getRequestConfig } from "next-intl/server";
+// Static imports: Cloudflare edge builds cannot resolve runtime dynamic imports.
+import en from "./messages/en.json";
+import ru from "./messages/ru.json";
+import ar from "./messages/ar.json";
+import es from "./messages/es.json";
+import fr from "./messages/fr.json";
+import pt from "./messages/pt.json";
+
+const MESSAGES: Record<string, typeof en> = { en, ru, ar, es, fr, pt };
+
 export default getRequestConfig(async ({ locale }) => {
-  let messages;
-  try {
-    switch (locale) {
-      case "zh": messages = (await import("../../messages/zh.json")).default; break;
-      case "es": messages = (await import("../../messages/es.json")).default; break;
-      case "fr": messages = (await import("../../messages/fr.json")).default; break;
-      case "ar": messages = (await import("../../messages/ar.json")).default; break;
-      default: messages = (await import("../../messages/en.json")).default; break;
-    }
-  } catch(e) {
-    // If nested differently, try one directory up
-    try {
-      switch (locale) {
-        case "zh": messages = (await import("../messages/zh.json")).default; break;
-        case "es": messages = (await import("../messages/es.json")).default; break;
-        case "fr": messages = (await import("../messages/fr.json")).default; break;
-        case "ar": messages = (await import("../messages/ar.json")).default; break;
-        default: messages = (await import("../messages/en.json")).default; break;
-      }
-    } catch(e2) {}
-  }
-  return { locale: String(locale), messages };
+  const key = String(locale);
+  const messages = MESSAGES[key] ?? en;
+  return { locale: key, messages };
 });
